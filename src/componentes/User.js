@@ -2,7 +2,7 @@ export  function Usuario(atributo) {
     return (
       <div class="usuario">
         <img
-          data-test="profile-image "
+          data-test="profile-image"
           onClick={() => atributo.mudarImagem()}
           src={atributo.imagemUsuarioPrincipal}
           alt={atributo.legendausuario}

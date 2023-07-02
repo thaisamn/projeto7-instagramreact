@@ -93,7 +93,7 @@ export function Post(atributo) {
 
 
   return (
-    <div class="post" data-test="post ">
+    <div class="post" data-test="post">
       <div class="topo">
         <div class="usuario">
           <img src={atributo.imagemUsuario} alt={atributo.legendaUsuario} />
@@ -120,15 +120,14 @@ export function Post(atributo) {
           </div>
           <div data-test="save-post" onClick={() => setSalvo(!salvo)}>
             {salvo ? <Icone nomeicone="bookmark" /> : <Icone nomeicone="bookmark-outline" />}
-            
           </div>
         </div>
 
         <div class="curtidas">
           <img src={atributo.imagemCurtidas} alt={atributo.legendaCurtidas} />
-          <div class="texto">
+          <div  data-test="likes-number" class="texto">
             Curtido por <strong>{atributo.nomecurtiu}</strong> e{" "}
-            <strong>outras <span data-test="likes-number">{curtidas}</span> pessoas</strong>
+            <strong>outras {curtidas}  pessoas</strong>
           </div>
         </div>
       </div>
